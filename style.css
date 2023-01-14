@@ -1,0 +1,116 @@
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+}
+
+/* ------------------
+header section styles
+---------------------- */
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3.125rem;
+  padding-bottom: 6.2rem;
+  margin-left: 1rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.navbar ul li {
+  margin-right: 3.125rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #424242;
+  font-style: normal;
+}
+
+.logo-title {
+  font-weight: 700;
+  font-size: 2.9rem;
+}
+
+.banner {
+  text-align: center;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 4.1rem;
+  line-height: 4.7rem;
+}
+
+.banner p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #727272;
+  line-height: 1.6rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.btn1 {
+  width: 11.2rem;
+  height: 4rem;
+  padding: 1.25rem 1.5rem;
+  background: #ff900e;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.banner-img {
+  width: 95%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.banner-section {
+  margin-top: 3.15rem;
+  text-align: center;
+}
+.nav-btn img {
+  width: 50px;
+  padding-right: 45px;
+  display: none;
+}
+/* --------------
+  Responsive Zone
+ /* -----------------*/
+@media only screen and (max-width: 576px) {
+  .navbar ul {
+    display: none;
+  }
+  .logo-title {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .banner-title {
+    font-weight: 700;
+    font-size: 2.3rem;
+    line-height: 2.7rem;
+  }
+  .banner p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .nav-btn img {
+    display: initial;
+  }
+  .banner-section {
+    margin-top: 2rem;
+  }
+}
