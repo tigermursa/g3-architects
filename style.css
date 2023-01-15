@@ -241,8 +241,8 @@ header {
   transition: background-color 0.5s;
 }
 
-.fact-info h1 {
-  animation: number 1s ease-in-out 1s infinite alternate none;
+.fact-info img {
+  animation: img 1s ease 1s infinite alternate none;
   position: relative;
   top: -1px;
   animation-play-state: running;
@@ -252,12 +252,26 @@ header {
   border: none;
   background-color: #e9c091;
 }
-@keyframes number {
+@keyframes img {
   form {
-    font-size: 45px;
   }
   to {
-    font-size: 42px;
+    transform: rotate(20deg);
+  }
+}
+
+.enjoy {
+  animation: enjoy 2s ease 1s infinite alternate none;
+  animation-play-state: running;
+}
+
+@keyframes enjoy {
+  form {
+    color: black;
+  }
+
+  to {
+    color: #ff900e;
   }
 }
 .some-facts p {
@@ -284,6 +298,8 @@ header {
 .sponsors-container {
   margin: 30px 90px;
   text-align: center;
+  margin-bottom: 200px;
+  margin-top: 150px;
 }
 .sponser-img {
   display: flex;
@@ -377,7 +393,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 150px;
 }
 p {
   font-style: normal;
