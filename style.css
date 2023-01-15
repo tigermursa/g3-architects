@@ -528,6 +528,10 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
     margin: 0;
     row-gap: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
   }
   .fact-info {
     width: 90px;
@@ -547,6 +551,7 @@ footer p {
   }
   .sponsors-container {
     margin: 10px;
+
   }
 
   .sponser-img {
@@ -582,7 +587,6 @@ footer p {
   }
   .form-container {
     margin: 10px;
-    padding: 0 40px;
   }
 }
 
