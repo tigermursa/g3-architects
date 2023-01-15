@@ -12,7 +12,7 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 3.125rem;
   padding-bottom: 6.2rem;
@@ -66,33 +66,92 @@ header {
   border: none;
   color: #ffffff;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .banner-img {
-  width: 95%;
+  width: 80%;
   text-align: center;
   border-radius: 8px;
 }
 
-.banner-section {
+.banner-photo {
   margin-top: 3.15rem;
   text-align: center;
 }
 .nav-btn img {
-  width: 50px;
-  padding-right: 45px;
+  width: 30px;
+  padding-right: 30px;
   display: none;
 }
-/* --------------
-  Responsive Zone
- /* -----------------*/
-@media only screen and (max-width: 576px) {
+
+
+/* ----------------------
+  features section styles
+ /* ---------------------*/
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 85px;
+  width: 100%;
+  column-gap: 60px;
+}
+
+.team-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-left: 120px;
+}
+
+.team-img img {
+  width: 342px;
+  height: 342px;
+}
+
+.primary-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.features-info {
+  padding: 10px;
+}
+.features-info p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #727272;
+  line-height: 1.6rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.quick-word {
+  color: #727272;
+  font-weight: 500;
+}
+.features-word {
+  color: #ff900e;
+}
+
+
+
+
+/* ----------------------
+  Responsive Zone starts
+ /* ---------------------*/
+ @media only screen and (max-width: 576px) {
   .navbar ul {
     display: none;
   }
   .logo-title {
-    font-weight: 700;
+    font-weight: bolder;
     font-size: 2rem;
   }
   .banner-title {
@@ -100,17 +159,40 @@ header {
     font-size: 2.3rem;
     line-height: 2.7rem;
   }
+
+  .banner-img {
+    width: 90%;
+  }
   .banner p {
-    font-weight: 400;
-    font-size: 1rem;
-    color: #727272;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    padding: 0 20px;
   }
   .nav-btn img {
     display: initial;
   }
-  .banner-section {
+  .banner-photo {
     margin-top: 2rem;
   }
+  .features {
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .team-img {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-left:0px;
+    margin-bottom: 50px;
+  }
+
+  .team-img img {
+    width: 250px;
+    height: 200px;
+  }
+  .features-info p{
+    padding: 0 20px;
+  }
 }
+/* ----------------------
+  Responsive Zone ends
+ /* ---------------------*/
