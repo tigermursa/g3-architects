@@ -3,9 +3,9 @@
   margin: 0;
 }
 
-/* ------------------
-header section styles
----------------------- */
+/* --------------------------------
+       header section styles
+----------------------------------- */
 header {
   background-color: rgba(255, 144, 14, 0.1);
 }
@@ -85,10 +85,9 @@ header {
   display: none;
 }
 
-
-/* ----------------------
-  features section styles
- /* ---------------------*/
+/* -----------------------------------------
+          features section styles
+-- ----------------------------------------*/
 
 .features {
   display: grid;
@@ -97,15 +96,17 @@ header {
   justify-items: center;
   align-items: center;
   margin-top: 85px;
-  width: 100%;
   column-gap: 60px;
+  border: 2px solid red;
+  margin-left: 90px;
+  margin-right: 90px;
+  
 }
 
 .team-img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
-  margin-left: 120px;
 }
 
 .team-img img {
@@ -120,7 +121,7 @@ header {
 }
 
 .features-info {
-  padding: 10px;
+  padding-right: 20px;
 }
 .features-info p {
   font-style: normal;
@@ -139,6 +140,85 @@ header {
 .features-word {
   color: #ff900e;
 }
+#quick-mobile{
+display: none;
+}
+
+/* ---------------------------------------------
+          features container section 
+------------------------------------------------ */
+
+.features-container{
+  display: flex;
+  border: 2px solid red;
+  justify-content: center;
+  margin: 0 90px;
+  margin-top: 130px;
+  justify-items: center;
+  gap: 50px;
+}
+
+.architect img{
+  width: 100%;
+  height: 1059px;
+}
+
+.features-all-list{
+  padding: 5px;
+  width: 100%;
+ 
+}
+
+.features1-title{
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  border-left: 5px solid #FF900E;
+  padding: 0 20px;
+}
+.features-all-list p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #727272;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.features2{
+box-sizing: border-box;
+box-shadow: 0.5px 0.5px 8px rgb(228, 221, 221);
+padding: 10px;
+border-radius: 8px;
+margin-bottom: 20px;
+}
+
+.btn2 {
+  width: 300px;
+  height: 150px;
+  padding: 1.25rem 1.5rem;
+  background: #ff900e;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  top: -100px;
+  left: -60px;
+}
+
+.btn-text{
+  font-weight: 700;
+font-size: 50px;
+line-height: 70px;
+}
+
+
+
+
+
 
 
 
@@ -146,7 +226,7 @@ header {
 /* ----------------------
   Responsive Zone starts
  /* ---------------------*/
- @media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .navbar ul {
     display: none;
   }
@@ -175,13 +255,13 @@ header {
     margin-top: 2rem;
   }
   .features {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .team-img {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    margin-left:0px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0px;
     margin-bottom: 50px;
   }
 
@@ -189,8 +269,62 @@ header {
     width: 250px;
     height: 200px;
   }
-  .features-info p{
+  .features-info p {
     padding: 0 20px;
+  }
+  .features-info button {
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  .features-container{
+    flex-direction: column;
+  }
+
+  .architect img{
+    width: 100%;
+    height: 400px;
+    border-radius: 8;
+  }
+
+  .btn2 {
+    width: 200px;
+    height: 80px;
+    font-size:15px;
+    top: 00px;
+    left: 0px;
+  }
+
+  .btn-text{
+    font-weight: 400;
+  font-size: 30px;
+  line-height: 10px;
+  }
+
+  .features1-title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    border-left: 5px solid #FF900E;
+    padding: 0 20px;
+  }
+  .features-container{
+    margin: 0 10px;
+  }
+
+  .features{
+    margin: 0 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .primary-title{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+  }
+  #quick-pc{
+    display: none;
   }
 }
 /* ----------------------
