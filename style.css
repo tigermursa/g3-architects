@@ -571,7 +571,8 @@ footer p {
   }
   .left-part,
   form {
-    width: 100%;
+    width: 90%;
+    border: 1px solid red;
   }
   .fa-envelope {
     margin-top: 0;
