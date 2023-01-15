@@ -4,7 +4,7 @@
 }
 
 /* --------------------------------
-       header section styles
+      header section styles
 ----------------------------------- */
 header {
   background-color: rgba(255, 144, 14, 0.1);
@@ -18,7 +18,9 @@ header {
   padding-bottom: 6.2rem;
   margin-left: 1rem;
 }
-
+.logo-color {
+  color: #ff900e;
+}
 .navbar ul {
   display: flex;
   list-style: none;
@@ -69,6 +71,10 @@ header {
   font-size: 1rem;
 }
 
+.btn1:hover {
+  background: #d67609;
+}
+
 .banner-img {
   width: 80%;
   text-align: center;
@@ -97,7 +103,6 @@ header {
   align-items: center;
   margin-top: 85px;
   column-gap: 60px;
-  border: 2px solid red;
   margin-left: 90px;
   margin-right: 90px;
 }
@@ -149,7 +154,6 @@ header {
 
 .features-container {
   display: flex;
-  border: 2px solid red;
   justify-content: center;
   margin: 0 90px;
   margin-top: 130px;
@@ -180,7 +184,7 @@ header {
   font-size: 1rem;
   color: #727272;
   line-height: 1.6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 21px;
   margin-top: 2rem;
 }
 
@@ -218,7 +222,6 @@ header {
 --------------------------------- */
 .some-fact-container {
   margin: 30px 90px;
-  border: 2px solid red;
 }
 
 .fact-container {
@@ -235,6 +238,27 @@ header {
   padding: 50px 35px;
   text-align: center;
   align-items: center;
+  transition: background-color 0.5s;
+}
+
+.fact-info h1 {
+  animation: number 1s ease-in-out 1s infinite alternate none;
+  position: relative;
+  top: -1px;
+  animation-play-state: running;
+}
+
+.fact-info:hover {
+  border: none;
+  background-color: #e9c091;
+}
+@keyframes number {
+  form {
+    font-size: 45px;
+  }
+  to {
+    font-size: 42px;
+  }
 }
 .some-facts p {
   font-style: normal;
@@ -252,6 +276,121 @@ header {
   font-size: 45px;
   line-height: 53px;
   color: #424242;
+}
+
+/* -----------------------------
+     sponsors-container styles
+--------------------------------- */
+.sponsors-container {
+  margin: 30px 90px;
+  text-align: center;
+}
+.sponser-img {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 90px;
+}
+.sponser-img img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+/* -----------------------------
+     contact form styles
+--------------------------------- */
+.form-container {
+  margin: 30px 90px;
+  background-color: rgb(228, 248, 248);
+}
+.main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ff900e;
+}
+form {
+  padding: 25px;
+  margin: 25px;
+  box-shadow: 0 2px 5px #f5f5f5;
+  background: #f5f5f5;
+}
+.fas {
+  margin: 25px 10px 0;
+  font-size: 72px;
+  color: #fff;
+}
+.fa-envelope {
+  transform: rotate(-20deg);
+  animation: fonts 1s ease-in-out 1s infinite alternate none;
+  animation-play-state: running;
+}
+.fa-at,
+.fa-mail-bulk {
+  transform: rotate(10deg);
+  animation: fonts 1s ease-in-out 1s infinite alternate none;
+  animation-play-state: running;
+}
+
+@keyframes fonts {
+  form {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(-22deg);
+  }
+}
+input,
+textarea {
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ff900e;
+  width: calc(100% - 18px);
+  outline: none;
+}
+input::placeholder {
+  color: #666;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #ff900e;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+button:hover {
+  background: #ac5d03;
+}
+
+/* -----------------------------
+     footer styles
+--------------------------------- */
+
+footer {
+  margin: 30px 90px;
+  background-color: #fff4e7;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #727272;
+  line-height: 1.6rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding-left: 10px;
+}
+footer p {
+  color: black;
 }
 
 /* ----------------------------------------------
@@ -298,7 +437,8 @@ header {
 
   .team-img img {
     width: 250px;
-    height: 200px;
+    height: 150px;
+    border-radius: 25px;
   }
   .features-info p {
     padding: 0 20px;
@@ -369,7 +509,70 @@ header {
     flex-direction: column;
     margin: 0;
   }
+
+  .sponsors-container {
+    margin: 10px;
+  }
+
+  .sponser-img {
+    margin-bottom: 40px;
+    margin: 5ps;
+  }
+
+  .sponser-img img {
+    width: 50px;
+  }
+  footer {
+    margin: 10px;
+  }
+
+  .main-block {
+    flex-direction: column;
+  }
+  .left-part,
+  form {
+    width: 100%;
+  }
+  .fa-envelope {
+    margin-top: 0;
+    margin-left: 20%;
+  }
+  .fa-at {
+    margin-top: -10%;
+    margin-left: 65%;
+  }
+  .fa-mail-bulk {
+    margin-top: 2%;
+    margin-left: 28%;
+  }
+  .form-container {
+    margin: 10px;
+    padding: 0 40px;
+  }
 }
-/* ----------------------
-  Responsive Zone ends
- /* ---------------------*/
+
+@media (min-width: 568px) {
+  .main-block {
+    flex-direction: row;
+  }
+  .left-part,
+  form {
+    width: 50%;
+  }
+  .fa-envelope {
+    margin-top: 0;
+    margin-left: 20%;
+  }
+  .fa-at {
+    margin-top: -10%;
+    margin-left: 65%;
+  }
+  .fa-mail-bulk {
+    margin-top: 2%;
+    margin-left: 28%;
+  }
+}
+
+/* --------------------------------------------------------
+      LAST FINISHED AT 8.02 PM 15 JANUARY 2023
+ /* -------------------------------------------------------*/
