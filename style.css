@@ -288,7 +288,6 @@ header {
 .fact-info h1 {
   font-weight: 600;
   font-size: 45px;
-  line-height: 53px;
   color: #424242;
 }
 
@@ -524,10 +523,27 @@ footer p {
     margin-top: 40px;
   }
   .fact-container {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin: 0;
+    row-gap: 5px;
   }
-
+  .fact-info {
+    width: 90px;
+    height: 125px;
+  }
+  .fact-info h1 {
+    font-size: 32px;
+  }
+  .fact-info p {
+    font-weight: 300;
+    font-size: 11px;
+    color: #727272;
+    line-height: 2px;
+    margin-bottom: 2rem;
+    margin-top: 5px;
+    padding-left: 0px;
+  }
   .sponsors-container {
     margin: 10px;
   }
