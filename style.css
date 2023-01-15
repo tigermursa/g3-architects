@@ -326,6 +326,9 @@ line-height: 70px;
   #quick-pc{
     display: none;
   }
+  #quick-mobile{
+    display: inherit;
+    }
 }
 /* ----------------------
   Responsive Zone ends
